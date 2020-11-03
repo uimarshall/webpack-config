@@ -1,0 +1,25 @@
+{
+	"name": "webpack-config",
+	"version": "1.0.0",
+	"private": true,
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "webpack"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/uimarshall/webpack-config.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/uimarshall/webpack-config/issues"
+	},
+	"homepage": "https://github.com/uimarshall/webpack-config#readme",
+	"devDependencies": {
+		"webpack": "^4.44.1",
+		"webpack-cli": "^3.3.12"
+	}
+}
