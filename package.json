@@ -19,7 +19,12 @@
 	},
 	"homepage": "https://github.com/uimarshall/webpack-config#readme",
 	"devDependencies": {
-		"webpack": "^4.44.1",
+		"bootstrap": "^4.5.3",
+		"css-loader": "^5.0.0",
+		"sass": "^1.28.0",
+		"sass-loader": "^10.0.5",
+		"style-loader": "^2.0.0",
+		"webpack": "^4.44.2",
 		"webpack-cli": "^3.3.12"
 	}
 }

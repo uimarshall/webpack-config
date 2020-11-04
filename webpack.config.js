@@ -21,5 +21,20 @@ module.exports = {
     output:{
         filename:"main.js",//create helo.js in the path below
         path: path.resolve(__dirname, "dist")
-    }
+    },
+    module: {
+    rules: [
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          // Creates `style` nodes from JS strings and Injects into DOM
+          'style-loader',
+          // Translates CSS into CommonJS
+          'css-loader',
+          // Compiles Sass to CSS
+          'sass-loader',
+        ],
+      },
+    ],
+  },
 };
