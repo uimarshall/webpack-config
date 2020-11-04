@@ -12,32 +12,21 @@ module.exports = {
     }
 };*/
 // ***************************************************
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+
 const path = require('path');
-module.exports = {
+const common = require('./webpack.common');
+// webpack-merge v5 (and later)
+const { merge } = require('webpack-merge')
+// const merge = require('webpack-merge');//This will merge the content of webpack.common.js to webpack.dev.js
+
+module.exports = merge(common, {
     mode: "development",
     // devtool: "none",
-    entry: "./src/index.js",
+    // entry: "./src/index.js",
     output:{
-        filename:"main.[contentHash].js",//create helo.js in the path below
+        filename:"main.js",
         path: path.resolve(__dirname, "dist")
     },
-    plugins: [new HtmlWebpackPlugin({
-        template: "./src/template.html"
-    })],
-    module: {
-    rules: [
-      {
-        test: /\.s[ac]ss$/i,
-        use: [
-          // Creates `style` nodes from JS strings and Injects into DOM
-          'style-loader',
-          // Translates CSS into CommonJS
-          'css-loader',
-          // Compiles Sass to CSS
-          'sass-loader',
-        ],
-      },
-    ],
-  },
-};
+    
+   
+})
