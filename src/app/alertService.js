@@ -1,6 +1,4 @@
-alert('Hello from webpack')
-const sayName =(name)=>{
-    return `Holla! My name is ${name}`
-}
 
-export default sayName
+const sayName = (name) => `Holla! My name is ${name}`;
+
+export default sayName;
